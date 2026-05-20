@@ -5,8 +5,8 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Your Name — Aspiring Data Analyst" },
-      { name: "description", content: "Portfolio of Your Name, an aspiring data analyst. Projects, skills, and contact." },
+      { title: "Pranav Kumbhar — Aspiring Data Analyst" },
+      { name: "description", content: "Portfolio of Pranav Kumbhar, an aspiring data analyst. Projects, skills, and contact." },
     ],
   }),
 });
@@ -44,7 +44,7 @@ function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <header className="mx-auto flex max-w-5xl items-center justify-between px-6 py-6">
-        <span className="text-sm font-semibold tracking-tight">Your Name</span>
+        <span className="text-sm font-semibold tracking-tight">Pranav Kumbhar</span>
         <nav className="hidden gap-6 text-sm text-muted-foreground sm:flex">
           <a href="#projects" className="hover:text-foreground">Projects</a>
           <a href="#skills" className="hover:text-foreground">Skills</a>
@@ -57,7 +57,7 @@ function Index() {
         <section className="py-20 sm:py-28">
           <p className="text-sm font-medium uppercase tracking-widest text-primary">Aspiring Data Analyst</p>
           <h1 className="mt-4 text-4xl font-bold tracking-tight sm:text-6xl">
-            Hi, I'm Your Name.
+            Hi, I am Pranav Kumbhar.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
             I turn raw data into clear, actionable insights. I'm comfortable with SQL, Python,
@@ -155,7 +155,7 @@ function Index() {
 
       <footer className="border-t border-border">
         <div className="mx-auto max-w-5xl px-6 py-8 text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Your Name
+          © {new Date().getFullYear()} Pranav Kumbhar
         </div>
       </footer>
     </div>
