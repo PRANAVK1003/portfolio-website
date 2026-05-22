@@ -48,7 +48,7 @@ const PROJECTS = [
     category: "Computer Vision / ML",
     description:
       "CNN-based fruit quality & price-estimation system trained on 6,000+ images — Best Project Award at institute level.",
-    tools: ["Python", "TensorFlow", "OpenCV", "Flask", "CNN"],
+    tools: ["Python", "OpenCV", "CNN"],
     href: "https://github.com/PRANAVK1003/Qualifruit",
     highlights: [
       "92% test accuracy across 6,000+ labelled images",
@@ -77,13 +77,12 @@ const PROJECTS = [
 ];
 
 const SKILL_GROUPS = [
-  { label: "Languages", icon: Code2, items: ["Python", "C++", "Java", "SQL"] },
+  { label: "Languages", icon: Code2, items: ["Python", "Java", "SQL"] },
   { label: "AI & Agentic Frameworks", icon: Bot, items: ["LangChain", "LangGraph", "LlamaIndex"] },
   { label: "LLM & GenAI", icon: Brain, items: ["Anthropic Claude", "OpenAI GPT", "Gemini API", "Prompt Engineering", "RAG"] },
-  { label: "Vector DBs & Embeddings", icon: Database, items: ["FAISS", "ChromaDB", "Pinecone", "Weaviate", "Semantic Search"] },
-  { label: "ML & Deep Learning", icon: Cpu, items: ["TensorFlow", "PyTorch", "Scikit-learn"] },
+  { label: "ML & Deep Learning", icon: Cpu, items: ["PyTorch", "Scikit-learn"] },
   { label: "Data Handling", icon: FileSpreadsheet, items: ["Pandas", "NumPy", "EDA", "Feature Engineering"] },
-  { label: "Deployment", icon: Rocket, items: ["FastAPI", "Flask", "REST APIs", "Streamlit"] },
+  { label: "Deployment", icon: Rocket, items: ["FastAPI", "REST APIs", "Streamlit"] },
   { label: "Cloud & Tools", icon: Wrench, items: ["AWS", "GCP Vertex AI", "Git", "GitHub", "Jupyter", "Colab"] },
   { label: "BI & Visualization", icon: BarChart3, items: ["Power BI", "DAX", "Excel", "Azure Maps", "Matplotlib"] },
 ];
@@ -94,16 +93,14 @@ const TIMELINE = [
   { year: "2025", title: "B.Tech AI & Data Science — DKTE", desc: "Graduating May 2025 · CGPA 7.3 · Coursework in ML, DL, CV, NLP.", icon: GraduationCap },
   { year: "2024", title: "SuperStore BI Dashboard", desc: "Shipped a multi-page Power BI dashboard — $3.93M sales, 22k+ orders.", icon: BarChart3 },
   { year: "2024", title: "LLM Agentic Q&A Application", desc: "Built a multi-agent RAG pipeline with LangChain, LangGraph & FastAPI.", icon: Bot },
-  { year: "2024", title: "Data Analyst Intern — Cognifyz Technologies", desc: "Cleaned 10k+ records (+25% quality), built scraping pipelines across 8 platforms.", icon: BarChart3 },
   { year: "2024", title: "Qualifruit CV Classifier", desc: "CNN reaching 92% accuracy on 6k+ images — Best Project Award.", icon: Cpu },
-  { year: "2024", title: "ML Crash Course — Google", desc: "Completed Google for Developers ML Crash Course.", icon: Award },
 ];
 
 const TERMINAL_CMDS = [
   { cmd: "whoami", out: "pranav.kumbhar — AI & Data Professional" },
   { cmd: "cat about.md", out: "Builder of intelligent systems. Curious about data, models, and the stories they tell." },
   { cmd: "ls projects/", out: "llm-agentic-qa/  qualifruit/  superstore-dashboard/" },
-  { cmd: "echo $STACK", out: "Python · SQL · Power BI · LangChain · TensorFlow" },
+  { cmd: "echo $STACK", out: "Python · SQL · Power BI · LangChain · PyTorch" },
   { cmd: "open contact", out: "→ Opening email & LinkedIn…" },
 ];
 
