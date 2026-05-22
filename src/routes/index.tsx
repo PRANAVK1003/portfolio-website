@@ -31,31 +31,33 @@ const PROJECTS = [
     title: "LLM Agentic Q&A Application",
     category: "AI / LLM",
     description:
-      "Conversational AI chatbot built with LLM agents — retrieves, reasons, and answers user queries with contextual memory and tool use.",
-    tools: ["Python", "LangChain", "OpenAI", "Streamlit", "Vector DB"],
+      "Hierarchical multi-agent pipeline (Research · Analysis · Editor) with RAG, self-reflection loops, and FastAPI deployment.",
+    tools: ["Python", "LangChain", "LangGraph", "FAISS", "Gemini API", "FastAPI"],
     href: "https://github.com/PRANAVK1003/ai-chatbot",
     highlights: [
-      "Agentic workflow with multi-step reasoning",
-      "Context-aware retrieval over custom knowledge base",
-      "Clean conversational UI for end users",
+      "Plan-and-execute orchestration via LangChain + LangGraph",
+      "RAG with FAISS vector store — grounded, low-hallucination answers",
+      "Self-reflection feedback loops to score & refine LLM outputs",
+      "FastAPI backend + Streamlit UI, end-to-end deployment",
     ],
     accent: "from-[oklch(0.7_0.24_275)] to-[oklch(0.78_0.22_295)]",
-    metric: "LLM",
+    metric: "Multi-Agent",
   },
   {
     title: "Qualifruit — Fruit Quality Classifier",
     category: "Computer Vision / ML",
     description:
-      "Deep-learning image classifier that grades fruit quality from photos — practical CV pipeline from data prep to inference.",
-    tools: ["Python", "TensorFlow", "OpenCV", "CNN", "Streamlit"],
+      "CNN-based fruit quality & price-estimation system trained on 6,000+ images — Best Project Award at institute level.",
+    tools: ["Python", "TensorFlow", "OpenCV", "Flask", "CNN"],
     href: "https://github.com/PRANAVK1003/Qualifruit",
     highlights: [
-      "Custom CNN trained on labelled fruit dataset",
-      "Image preprocessing & augmentation pipeline",
-      "Real-time inference via lightweight web app",
+      "92% test accuracy across 6,000+ labelled images",
+      "End-to-end ML pipeline — preprocessing, augmentation, tuning",
+      "+15% performance gain via systematic experimentation",
+      "Best Project Award (Institute level)",
     ],
     accent: "from-[oklch(0.78_0.16_200)] to-[oklch(0.7_0.24_275)]",
-    metric: "CV",
+    metric: "92% Acc",
   },
   {
     title: "SuperStore Sales Performance Dashboard",
@@ -75,18 +77,26 @@ const PROJECTS = [
 ];
 
 const SKILL_GROUPS = [
-  { label: "AI / ML", icon: Brain, items: ["Python", "TensorFlow", "PyTorch", "Scikit-learn", "LangChain", "LLMs"] },
-  { label: "Data Analytics", icon: BarChart3, items: ["SQL", "Excel", "Pandas", "NumPy", "Statistics"] },
-  { label: "Visualization", icon: LineChart, items: ["Power BI", "Tableau", "DAX", "Matplotlib", "Plotly"] },
-  { label: "Programming", icon: Code2, items: ["Python", "SQL", "JavaScript", "C++"] },
-  { label: "Tools & Cloud", icon: Wrench, items: ["Git", "GitHub", "Azure Maps", "Streamlit", "VS Code"] },
+  { label: "Languages", icon: Code2, items: ["Python", "C++", "Java", "SQL"] },
+  { label: "AI & Agentic Frameworks", icon: Bot, items: ["LangChain", "LangGraph", "LlamaIndex"] },
+  { label: "LLM & GenAI", icon: Brain, items: ["Anthropic Claude", "OpenAI GPT", "Gemini API", "Prompt Engineering", "RAG"] },
+  { label: "Vector DBs & Embeddings", icon: Database, items: ["FAISS", "ChromaDB", "Pinecone", "Weaviate", "Semantic Search"] },
+  { label: "ML & Deep Learning", icon: Cpu, items: ["TensorFlow", "PyTorch", "Scikit-learn"] },
+  { label: "Data Handling", icon: FileSpreadsheet, items: ["Pandas", "NumPy", "EDA", "Feature Engineering"] },
+  { label: "Deployment", icon: Rocket, items: ["FastAPI", "Flask", "REST APIs", "Streamlit"] },
+  { label: "Cloud & Tools", icon: Wrench, items: ["AWS", "GCP Vertex AI", "Git", "GitHub", "Jupyter", "Colab"] },
+  { label: "BI & Visualization", icon: BarChart3, items: ["Power BI", "DAX", "Excel", "Azure Maps", "Matplotlib"] },
 ];
 
 const TIMELINE = [
-  { year: "2024", title: "SuperStore BI Dashboard", desc: "Shipped a multi-page Power BI analytics dashboard with forecasting.", icon: BarChart3 },
-  { year: "2024", title: "LLM Agentic Q&A App", desc: "Built a conversational AI agent with tool use & retrieval.", icon: Bot },
-  { year: "2024", title: "Qualifruit CV Classifier", desc: "Trained a CNN for image-based fruit quality grading.", icon: Cpu },
-  { year: "2023", title: "B.Tech in Progress", desc: "Pursuing engineering with focus on AI, ML & data systems.", icon: GraduationCap },
+  { year: "2025", title: "ML Specialization — Stanford / DeepLearning.AI", desc: "Completed Andrew Ng's Machine Learning Specialization.", icon: Award },
+  { year: "2025", title: "ChatGPT Prompt Engineering — DeepLearning.AI", desc: "Advanced prompt engineering for LLM-powered apps.", icon: Award },
+  { year: "2025", title: "B.Tech AI & Data Science — DKTE", desc: "Graduating May 2025 · CGPA 7.3 · Coursework in ML, DL, CV, NLP.", icon: GraduationCap },
+  { year: "2024", title: "SuperStore BI Dashboard", desc: "Shipped a multi-page Power BI dashboard — $3.93M sales, 22k+ orders.", icon: BarChart3 },
+  { year: "2024", title: "LLM Agentic Q&A Application", desc: "Built a multi-agent RAG pipeline with LangChain, LangGraph & FastAPI.", icon: Bot },
+  { year: "2024", title: "Data Analyst Intern — Cognifyz Technologies", desc: "Cleaned 10k+ records (+25% quality), built scraping pipelines across 8 platforms.", icon: BarChart3 },
+  { year: "2024", title: "Qualifruit CV Classifier", desc: "CNN reaching 92% accuracy on 6k+ images — Best Project Award.", icon: Cpu },
+  { year: "2024", title: "ML Crash Course — Google", desc: "Completed Google for Developers ML Crash Course.", icon: Award },
 ];
 
 const TERMINAL_CMDS = [
@@ -636,10 +646,10 @@ function Contact() {
           plus freelance and interesting collaborations.
         </p>
         <div className="relative mt-8 flex flex-wrap gap-3">
-          <MagneticButton href="mailto:your@email.com" primary>
-            <Mail size={16} /> your@email.com
+          <MagneticButton href="mailto:pranavkumbhar102003@gmail.com" primary>
+            <Mail size={16} /> pranavkumbhar102003@gmail.com
           </MagneticButton>
-          <MagneticButton href="https://linkedin.com/in/yourprofile">
+          <MagneticButton href="https://www.linkedin.com/in/pranavk007/">
             <Linkedin size={16} /> LinkedIn
           </MagneticButton>
           <MagneticButton href="https://github.com/PRANAVK1003">
@@ -650,7 +660,7 @@ function Contact() {
           </MagneticButton>
         </div>
         <p className="relative mt-6 font-mono text-xs text-muted-foreground">
-          <MapPin className="mr-1 inline" size={11} /> India · Open to remote
+          <MapPin className="mr-1 inline" size={11} /> India · +91 7083512455 · Open to remote
         </p>
       </div>
     </Section>
