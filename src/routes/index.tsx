@@ -646,10 +646,10 @@ function Contact() {
           plus freelance and interesting collaborations.
         </p>
         <div className="relative mt-8 flex flex-wrap gap-3">
-          <MagneticButton href="mailto:your@email.com" primary>
-            <Mail size={16} /> your@email.com
+          <MagneticButton href="mailto:pranavkumbhar102003@gmail.com" primary>
+            <Mail size={16} /> pranavkumbhar102003@gmail.com
           </MagneticButton>
-          <MagneticButton href="https://linkedin.com/in/yourprofile">
+          <MagneticButton href="https://www.linkedin.com/in/pranavk007/">
             <Linkedin size={16} /> LinkedIn
           </MagneticButton>
           <MagneticButton href="https://github.com/PRANAVK1003">
@@ -660,7 +660,7 @@ function Contact() {
           </MagneticButton>
         </div>
         <p className="relative mt-6 font-mono text-xs text-muted-foreground">
-          <MapPin className="mr-1 inline" size={11} /> India · Open to remote
+          <MapPin className="mr-1 inline" size={11} /> India · +91 7083512455 · Open to remote
         </p>
       </div>
     </Section>
