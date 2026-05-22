@@ -76,10 +76,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Pranav Kumbhar — AI Engineer & Data Storyteller. Building intelligent systems with Python, Power BI, and modern ML." },
       { name: "author", content: "Pranav Kumbhar" },
       { property: "og:title", content: "Pranav Kumbhar — AI & Data Professional" },
-      { property: "og:description", content: "Building intelligent systems. Portfolio of an aspiring AI Engineer, ML Engineer, and Data Analyst." },
+      { property: "og:description", content: "Pranav Kumbhar — AI Engineer & Data Storyteller. Building intelligent systems with Python, Power BI, and modern ML." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Pranav Kumbhar — AI & Data Professional" },
+      { name: "twitter:description", content: "Pranav Kumbhar — AI Engineer & Data Storyteller. Building intelligent systems with Python, Power BI, and modern ML." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/0f9f350c-2e8f-4d91-aa1a-70f649acae15/id-preview-00492d94--64c2d83a-6733-4eab-9219-4b5f8ecd536a.lovable.app-1779337510392.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/0f9f350c-2e8f-4d91-aa1a-70f649acae15/id-preview-00492d94--64c2d83a-6733-4eab-9219-4b5f8ecd536a.lovable.app-1779337510392.png" },
     ],
     links: [
       {
